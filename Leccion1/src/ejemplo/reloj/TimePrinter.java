@@ -14,7 +14,11 @@ public class TimePrinter implements Runnable {
 	public static void main(String[] args) {
 		
 		final Runnable tarea = new TimePrinter();
-		Thread hilo = new Thread(tarea, "Hilo de TimePrinter");
-		hilo.start();
+		Thread hilo1 = new Thread(tarea, "Hilo1 de TimePrinter");
+		Thread hilo2 = new Thread(tarea, "Hilo2 de TimePrinter");
+		hilo1.start();
+		hilo2.start();
+		
+		
 	}
 }

@@ -19,6 +19,5 @@ public class TimePrinter implements Runnable {
 		hilo1.start();
 		hilo2.start();
 		
-		
 	}
 }
